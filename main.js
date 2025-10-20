@@ -24,14 +24,14 @@ Add setting to automatically purchase free upgrades
 
 function firstSetup() {
     document.body.addEventListener('keydown', function (event) {
-        if (event.ctrlKey) {
-            document.body.classList.add("ctrlDown");
+        if (event.shiftKey) {
+            document.body.classList.add("shiftDown");
         }
     });
 
     document.body.addEventListener('keyup', function (event) {
-        if (!event.ctrlKey) {
-            document.body.classList.remove("ctrlDown");
+        if (!event.shiftKey) {
+            document.body.classList.remove("shiftDown");
         }
     });
 }
@@ -1000,10 +1000,10 @@ function clickBuy(what) {
     if (!item || !type) return;
     switch (type) {
         case "workers":
-            buyWorker(item, window.event.ctrlKey ? -1 : 1);
+            buyWorker(item, window.event.shiftKey ? -1 : 1);
             break;
         case "buildings":
-            buyBuilding(item, window.event.ctrlKey ? -1 : 1);
+            buyBuilding(item, window.event.shiftKey ? -1 : 1);
             break;
         case "upgrades":
             buyUpgrade(item);
