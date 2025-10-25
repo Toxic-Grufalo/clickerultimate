@@ -241,10 +241,10 @@ hr {
     border-style: solid;
 }
 
-body.ctrlDown #WorkersContainer .jbButton,
-body.ctrlDown #WorkersContainer .jbButton .jbIndicator,
-body.ctrlDown #BuildingsContainer .jbButton,
-body.ctrlDown #BuildingsContainer .jbButton .jbIndicator{
+body.shiftDown #WorkersContainer .jbButton,
+body.shiftDown #WorkersContainer .jbButton .jbIndicator,
+body.shiftDown #BuildingsContainer .jbButton,
+body.shiftDown #BuildingsContainer .jbButton .jbIndicator{
     border-color: red;
 }
 
